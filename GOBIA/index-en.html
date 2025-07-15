@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOBIA for Medical Supplies</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f2f2f2; padding: 20px; }
+    header, footer { background-color: #023e8a; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #0077b6; display: flex; justify-content: center; gap: 15px; padding: 10px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    section { background-color: white; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .product { width: 250px; background-color: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 15px; text-align: center; }
+    .product img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+    .whatsapp { display: inline-block; background-color: #25d366; color: white; padding: 8px 12px; margin-top: 10px; border-radius: 5px; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Factory Logo" style="height: 100px;">
+    <h1>GOBIA for Medical Supplies</h1>
+    <p><a href="index.html" style="color: #fff; text-decoration: underline;">النسخة العربية</a></p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#order">Order Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Gobia Factory</h2>
+    <p>A brief intro text for the factory, can be changed later.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p><strong>GOBIA for Medical Supplies</strong> is one of the leading factories in Egypt.</p>
+    <p>Managed by Mrs. Marwa El Ramady and Mr. Ahmed Samir.</p>
+    <p>Location: Al-Gharbia Governorate, Al-Mahalla Al-Kubra, Industrial Area.</p>
+   <h3>ISO Certificates:</h3>
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
+  <img src="images/iso1.jpg" alt="ISO Certificate 1" style="width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+  <img src="images/iso2.jpg" alt="ISO Certificate 2" style="width: 300px; border: 1px solid #ccc; border-radius: 5px;">
+</div>
+
+    <p>Article about us on <strong>Youm7</strong>: <a href="https://www.youum7.com/2025/06/gobia.html?fbclid=IwY2xjawLjNiNleHRuA2FlbQIxMQABHlOoDnlcGjoz0qaIX4z_zI9p-WhKSj_YGS9LZ1znCKsOJfDhpfBDHgC8CDtB_aem_fVus4kGgZlGa8sKIuFOqyg&m=1" target="_blank">Read here</a></p>
+    <p>Article about us on <strong>Cairo24News</strong>: <a href="https://www.caiiro24.com/2025/06/gobia.html?fbclid=IwY2xjawLjNhNleHRuA2FlbQIxMQABHtW8J1m7xP0AmMPlTAsWsl9YY-FmgmpY9y-dTvxJYzXH6KZgeri64Az-GxIH_aem_VTm5JZjuIP5RB4ct3zgvjQ&m=1" target="_blank">Read here</a></p>
+    <p><strong>Established:</strong> <em>To be added later</em></p>
+  </section>
+
+  <section id="products">
+    <h2>Products</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+<div class="product">
+      <img src="images/product1.jpg" alt="Product 1">
+      <h3>Product Name 1</h3>
+      <p>Product description 1...</p>
+      <p><strong>Price:</strong> ... EGP</p>
+      <a class="whatsapp" href="https://wa.me/201000122018" target="_blank">Contact via WhatsApp</a>
+    </div>
+<div class="product">
+      <img src="images/product2.jpg" alt="Product 2">
+      <h3>Product Name 2</h3>
+      <p>Product description 2...</p>
+      <p><strong>Price:</strong> ... EGP</p>
+      <a class="whatsapp" href="https://wa.me/201000122018" target="_blank">Contact via WhatsApp</a>
+    </div>
+<div class="product">
+      <img src="images/product3.jpg" alt="Product 3">
+      <h3>Product Name 3</h3>
+      <p>Product description 3...</p>
+      <p><strong>Price:</strong> ... EGP</p>
+      <a class="whatsapp" href="https://wa.me/201000122018" target="_blank">Contact via WhatsApp</a>
+    </div>
+<div class="product">
+      <img src="images/product4.jpg" alt="Product 4">
+      <h3>Product Name 4</h3>
+      <p>Product description 4...</p>
+      <p><strong>Price:</strong> ... EGP</p>
+      <a class="whatsapp" href="https://wa.me/201000122018" target="_blank">Contact via WhatsApp</a>
+    </div>
+<div class="product">
+      <img src="images/product5.jpg" alt="Product 5">
+      <h3>Product Name 5</h3>
+      <p>Product description 5...</p>
+      <p><strong>Price:</strong> ... EGP</p>
+      <a class="whatsapp" href="https://wa.me/201000122018" target="_blank">Contact via WhatsApp</a>
+    </div>
+
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>Order Now</h2>
+    <div style="max-width: 500px; margin: auto;">
+      <label for="product">Select Product:</label>
+      <select id="product" onchange="loadSizes()">
+        <option value="">-- Choose Product --</option>
+        <option value="p1">Product 1</option>
+        <option value="p2">Product 2</option>
+        <option value="p3">Product 3</option>
+        <option value="p4">Product 4</option>
+        <option value="p5">Product 5</option>
+      </select>
+
+      <label for="size">Select Size:</label>
+      <select id="size"></select>
+
+      <label for="quantity">Enter Quantity:</label>
+      <input type="number" id="quantity" min="1" value="1" />
+
+      <button onclick="calculatePrice()">Calculate Price</button>
+      <div id="result" style="margin-top: 15px; font-weight: bold;"></div>
+      <button onclick="confirmOrder()">Confirm Order</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>WhatsApp: <a href="https://wa.me/201000122018">01000122018</a></p>
+    <p>Additional Number: <a href="https://wa.me/201000251990">01000251990</a></p>
+    <p>Email: GOBIAmanufacture@gmail.com</p>
+    <p>Address: Al-Gharbia - Al-Mahalla Al-Kubra - Industrial Area</p>
+  </section>
+
+  <footer>
+    <p>© 2025 GOBIA for Medical Supplies. All rights reserved.</p>
+    <p>Phone: 01000122018 - Email: GOBIAmanufacture@gmail.com</p>
+  </footer>
+
+  <script>
+    const products = {
+      p1: { sizes: { Small: 10, Medium: 15, Large: 20 } },
+      p2: { sizes: { Small: 12, Medium: 18, Large: 22 } },
+      p3: { sizes: { S: 8, M: 14, L: 19 } },
+      p4: { sizes: { "Size 1": 5, "Size 2": 7, "Size 3": 10 } },
+      p5: { sizes: { A: 11, B: 16, C: 21 } }
+    };
+
+    function loadSizes() {
+      const product = document.getElementById("product").value;
+      const sizeSelect = document.getElementById("size");
+      sizeSelect.innerHTML = "";
+      if (products[product]) {
+        const sizes = products[product].sizes;
+        for (const size in sizes) {
+          const option = document.createElement("option");
+          option.value = size;
+          option.textContent = size;
+          sizeSelect.appendChild(option);
+        }
+      }
+    }
+
+    function calculatePrice() {
+      const product = document.getElementById("product").value;
+      const size = document.getElementById("size").value;
+      const quantity = parseInt(document.getElementById("quantity").value);
+      const resultDiv = document.getElementById("result");
+
+      if (!product || !size || !quantity || quantity < 1) {
+        resultDiv.textContent = "Please complete all fields.";
+        return;
+      }
+
+      const unitPrice = products[product].sizes[size];
+      const total = unitPrice * quantity;
+      resultDiv.textContent = `Total Price: ${total} EGP`;
+    }
+
+    function confirmOrder() {
+      const product = document.getElementById("product").value;
+      const size = document.getElementById("size").value;
+      const quantity = document.getElementById("quantity").value;
+      if (product && size && quantity > 0) {
+        const msg = `I want to order ${quantity} pieces of ${product}, size ${size}.`;
+        window.open(`https://wa.me/201000122018?text=${encodeURIComponent(msg)}`, '_blank');
+      } else {
+        alert("Please choose product, size and quantity first.");
+      }
+    }
+  </script>
+</body>
+</html>
